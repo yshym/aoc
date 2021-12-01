@@ -5,6 +5,6 @@
 
 * Usage
 #+begin_src bash
-export PYTHONPATH="$HOME/dev/advent-of-code/:$PYTHONPATH"
+export PYTHONPATH="<path-to-aoc-2021>:$PYTHONPATH"
 #+end_src
 before you run a solution

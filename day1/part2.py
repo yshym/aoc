@@ -1,10 +1,9 @@
 from collections import deque
 
-from utils import read_str
+from utils import map_strs, read_str
 
 
 def three_increased_count(depths):
-    depths = [int(d) for d in depths]
     dq = deque()
     wl = 3
     su = 0
@@ -23,7 +22,6 @@ def three_increased_count(depths):
 
 def three_increased_count_dp(depths):
     n = len(depths)
-    depths = [int(d) for d in depths]
     wl = 3
     dp = [0] * n
     dp[0] = depths[0]
@@ -49,7 +47,7 @@ def test_three_increased_count():
 260
 263
     """
-    depths = read_str(s)
+    depths = map_strs(int, read_str(s))
     assert three_increased_count(depths) == 5
     assert three_increased_count_dp(depths) == 5
 

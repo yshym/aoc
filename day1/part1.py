@@ -1,9 +1,8 @@
-from utils import read_str
+from utils import map_strs, read_str
 
 
 def increased_count(depths):
     n = len(depths)
-    depths = [int(d) for d in depths]
     res = 0
     for i in range(1, n):
         res += depths[i] > depths[i - 1]
@@ -23,7 +22,7 @@ def test_increased_count():
 260
 263
     """
-    depths = read_str(s)
+    depths = map_strs(int, read_str(s))
     assert increased_count(depths) == 7
 
 

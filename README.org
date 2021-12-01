@@ -1,0 +1,10 @@
+#+TITLE: Advent of Code 2021
+
+* Table of contents :TOC_2:
+- [[#usage][Usage]]
+
+* Usage
+#+begin_src bash
+export PYTHONPATH="$HOME/dev/advent-of-code/:$PYTHONPATH"
+#+end_src
+before you run a solution

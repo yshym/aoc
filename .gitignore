@@ -1,0 +1,13 @@
+# mac os
+.DS_Store
+
+# python
+*.py[cod]
+*.egg
+build
+
+# inputs
+input*.txt
+
+# env
+.envrc

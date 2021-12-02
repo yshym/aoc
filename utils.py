@@ -2,7 +2,7 @@ from typing import Callable, List, Union
 
 
 def read_str(s: str) -> List[str]:
-    return s.rstrip().split()
+    return s.strip().split("\n")
 
 
 def read_file(n: str) -> List[str]:

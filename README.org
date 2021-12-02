@@ -1,10 +1,10 @@
-#+TITLE: Advent of Code 2021
+#+TITLE: Advent of Code
 
 * Table of contents :TOC_2:
 - [[#usage][Usage]]
 
 * Usage
 #+begin_src bash
-export PYTHONPATH="<path-to-aoc-2021>:$PYTHONPATH"
+export PYTHONPATH="<path-to-aoc>:$PYTHONPATH"
 #+end_src
 before you run a solution

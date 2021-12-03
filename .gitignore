@@ -11,3 +11,6 @@ input*.txt
 
 # env
 .envrc
+
+# emacs
+flycheck_*.py

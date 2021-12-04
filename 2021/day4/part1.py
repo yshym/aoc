@@ -1,11 +1,11 @@
 def score(nums, boards, j=0):
     m, n = 5, len(boards)
-    # [{value: (row, col)}, ...]
+    # [{value: (row, col), ...}, ...]
     vtis = [
         {v: (r, c) for r, row in enumerate(b) for c, v in enumerate(row)}
         for b in boards
     ]
-    # [(0b11111, 0b11111), ...]
+    # [([0b11111, ...], [0b11111, ...]), ...]
     rc_pairs = [([31] * m, [31] * m) for b in boards]
     playing = set(range(n))
     wi = lnum = None

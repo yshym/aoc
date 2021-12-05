@@ -13,10 +13,8 @@ def read_file(n: str) -> List[str]:
     return read_str(s)
 
 
-def map_strs(
-    t: Callable[[str], Union[int, float]], strs
-) -> List[Union[int, float]]:
-    return list(map(t, strs))
+def map_strs(f: Callable, strs: List[str]):
+    return list(map(f, strs))
 
 
 def run_tests(module_name):
